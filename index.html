@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Stats</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+   
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10 text-center">
+            <table class="table table-light table-striped table-hover table-bordered shadow-lg p-3 mb-5 bg-body rounded" id="covidtable">
+                <h1>Covid Stats</h1>
+                <thead >
+                    <th>State</th>
+                    <th>Confirmed Foreign Case</th>
+                    <th>Confirmed Indian Case</th>
+                    <th>Toatal Confirmed Case</th>
+                    <th>Deaths</th>
+                    <th>Discharged</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+                
+            </table>
+        </div>
+        
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-10 text-center">
+            <table class="table table-info table-hover table-bordered shadow-lg p-3 mb-5 bg-body rounded">
+                <h1 >Summary</h1>
+                <thead >
+                    <th >Confirmed Indian Cases</th>
+                    <th >confirmed Foreign Cases</th>
+                    <th >Total Confirmed Cases</th>
+                    <th >Total Discharged</th>
+                    <th >Total Deaths</th>
+                    <th >Confirmed But Location Unidentified</th>
+                    <th>Last Refreshed</th>
+                    <th>Source</th>
+                </thead>
+                <tbody id="tsummary"></tbody>
+            </table>
+        </div>
+    </div>
+        
+    </div>
+       
+    <script src="./index.js"></script>
+</body>
+</html>
